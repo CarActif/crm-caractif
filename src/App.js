@@ -63,7 +63,8 @@ export default function App() {
         statut: "Mandat reçu",
       });
     } else {
-      alert("Erreur à l'ajout du mandat : " + error.message);
+      console.error(error);
+alert("Erreur à l'ajout du mandat : " + JSON.stringify(error));
     }
   };
 
